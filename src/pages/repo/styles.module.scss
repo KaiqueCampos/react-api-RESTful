@@ -1,0 +1,32 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 1rem;
+
+    p {
+        font: 700 2rem "Roboto", sans-serif;
+        color: #5F5F68;
+    }
+
+    button{
+        font: 500 1rem "Roboto", sans-serif;
+
+        border: none;
+        border-radius: 1rem;
+
+        padding: 1rem 2rem;
+        background: #7fee79;
+
+        transition: filter 0.2s;
+
+        &:hover{
+            filter: brightness(0.7)
+        }
+    }
+}

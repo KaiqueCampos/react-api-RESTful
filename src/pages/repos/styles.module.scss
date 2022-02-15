@@ -1,0 +1,41 @@
+.container {
+    padding: 5rem 10rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.title{
+    font: 700 3rem 'Roboto', sans-serif;
+    color: #7fee79;
+}
+
+.repositoryContainer {
+        
+    background: #1e1e22;
+    padding: 1.5rem;
+
+    border-radius: 1rem;
+
+    & ~ & {
+        margin-top: 1rem;
+    }
+
+    a {
+
+        font: 500 1.2rem 'Roboto', sans-serif;
+        color: #67e480;
+
+        transition: all 0.2s;
+
+        &:hover {
+            color: #179430;
+        }
+    }
+
+    p{
+        margin-top: 0.5rem;
+    }
+}

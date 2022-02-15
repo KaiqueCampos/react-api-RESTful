@@ -1,6 +1,7 @@
 import { useQueryClient } from "react-query";
-import { useParams } from "react-router-dom"
-import { Repository } from "../types/repos";
+import { useParams } from "react-router-dom";
+import { Repository } from "../../types/repos";
+import styles from './styles.module.scss';
 
 export function Repo() {
 
@@ -21,6 +22,7 @@ export function Repo() {
             const nextRepos = previousRepos.map(repo => {
                 if (repo.full_name === currentRepository) {
                     return { ...repo, description: 'new description' }
+
                 } else {
                     return repo;
                 }
@@ -31,7 +33,7 @@ export function Repo() {
     }
 
     return (
-        <div>
+        <div className={styles.container}>
             <p>{currentRepository}</p>
             <button onClick={handleChangeRepositoryDescription}>Change Repository Description</button>
         </div>
