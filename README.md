@@ -12,6 +12,9 @@
 - Vite
 - React
 - Typescript
+- React-Query
+- SWR (stale-while-revalidate) 
+- Axios
 - Github Api
 
 # 💻 How to install?
